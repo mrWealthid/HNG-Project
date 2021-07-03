@@ -65,7 +65,7 @@ button {
   display: none;
 }
 #header-img {
-  width: 25%;
+  width: 60%;
 }
 
 .img-class {
@@ -176,14 +176,6 @@ footer {
   width: 15%;
 }
 
-.footer-img::after {
-  content: "Changing the world one intern at a time";
-  display: block;
-  font-size: 8px;
-  font-weight: bold;
-  margin-left: 22px;
-  text-shadow: 1px 2px 3px black;
-}
 .footer-head {
   margin-bottom: 10px;
 }
