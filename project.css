@@ -209,7 +209,7 @@ footer {
     margin: 0px;
     top: 75px;
     right: 100%;
-    width: 50%;
+    width: 75%;
     text-align: center;
     background-color: whitesmoke;
     height: 100vh;
@@ -277,7 +277,7 @@ footer {
   }
 
   .show {
-    right: 50%;
+    right: 25%;
   }
   #footer-image {
     width: 35%;
@@ -343,5 +343,9 @@ footer {
   .footer-tabs {
     border-top: 1px solid white;
     padding: 20px 0px;
+  }
+
+  #main-btn {
+    width: 60%;
   }
 }
