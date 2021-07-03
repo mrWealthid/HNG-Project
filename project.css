@@ -42,6 +42,7 @@ button {
   border-radius: 10px;
   font-size: var(--content-fontsize);
   font-weight: 700;
+  transition: 0.5s;
 }
 
 .active {
@@ -54,6 +55,12 @@ button {
   font-weight: 700px;
 }
 
+.active:hover {
+  color: var(--secondary-color);
+  background: white;
+  border: 1px solid var(--secondary-color);
+}
+
 .wealth {
   display: none;
 }
@@ -63,9 +70,6 @@ button {
 
 .img-class {
   flex: 1;
-}
-#footer-image {
-  width: 15%;
 }
 
 header {
@@ -93,6 +97,13 @@ main {
   font-weight: 500;
   font-family: var(--secondary-font);
   letter-spacing: 0.02rem;
+  box-shadow: 1px 2px 3px gainsboro;
+}
+
+#main-btn:hover {
+  color: var(--secondary-color);
+  background-color: white;
+  border: 1px solid var(--secondary-color);
 }
 
 #main-img {
@@ -143,6 +154,11 @@ footer {
   font-weight: 500;
 }
 
+#contact:hover {
+  color: var(--primary-color);
+  background-color: white;
+  border: 1px solid var(--primary-color);
+}
 .footer-img {
   margin-bottom: 50px;
 }
@@ -156,6 +172,17 @@ footer {
   margin-bottom: 10px;
 }
 
+#footer-image {
+  width: 15%;
+}
+
+.footer-img::after {
+  content: "Changing the world one intern at a time";
+  display: block;
+  font-size: 8px;
+  margin-left: 16px;
+  text-shadow: 1px 2px 3px black;
+}
 .footer-head {
   margin-bottom: 10px;
 }
