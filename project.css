@@ -92,6 +92,7 @@ main {
   width: 50%;
   font-weight: 500;
   font-family: var(--secondary-font);
+  letter-spacing: 0.02rem;
 }
 
 #main-img {
@@ -179,9 +180,15 @@ footer {
   font-size: 20px;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1100px) {
   .header-links {
     flex: 1;
+  }
+
+  main {
+    height: 54vh;
+    padding-left: 40px;
+    margin-top: 200px;
   }
 
   .img-class {
@@ -248,6 +255,8 @@ footer {
   main {
     justify-content: center;
     position: relative;
+    height: auto;
+    margin: 30px 0px 70px 0px;
   }
 
   .overlay-filter {
