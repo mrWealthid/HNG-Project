@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Poppins:wght@400;700&display=swap");
+
+* {
+  padding: 0px;
+  margin: 0px;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: rgba(55, 102, 153, 1);
+  --secondary-color: rgba(0, 174, 255, 1);
+  --primary-font: "Lato", sans-serif;
+  --secondary-font: "Poppins", sans-serif;
+  --primary-fontsize: 36px;
+  --secondary-fontsize: 18px;
+  --content-fontsize: 16px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  color: black;
+  margin-right: 15px;
+  font-family: var(--primary-font);
+  font-weight: 500;
+  transition: 0.5;
+}
+
+a:hover {
+  color: var(--secondary-color);
+}
+button {
+  outline: none;
+  border: none;
+  font-family: var(--secondary-font);
+  padding: 15px;
+  color: white;
+  border-radius: 10px;
+  font-size: var(--content-fontsize);
+  font-weight: 700;
+  transition: 0.5s;
+}
+
+.active {
+  border-radius: 30px;
+  background-color: var(--secondary-color);
+  font-family: var(--primary-font);
+  padding: 12px 35px;
+  font-size: var(--content-fontsize);
+  color: white;
+  font-weight: 700px;
+}
+
+.active:hover {
+  color: var(--secondary-color);
+  background: white;
+  border: 1px solid var(--secondary-color);
+}
+
+.wealth {
+  display: none;
+}
+#header-img {
+  width: 60%;
+}
+
+/* .img-class {
+  flex: 1;
+} */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 24px 20px 20px 85px;
+  align-items: center;
+}
+
+.contact-Details {
+  width: 45%;
+  line-height: 25.5px;
+}
+
+.contact-Details3 {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+footer {
+  padding: 20px 20px 20px 60px;
+  background-color: var(--primary-color);
+  color: white;
+  margin-top: 30px;
+  font-family: var(--primary-font);
+  font-size: 14px;
+}
+
+#contact {
+  background-color: var(--secondary-color);
+  border-radius: 30px;
+  width: 90%;
+  padding: 13px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+#contact:hover {
+  color: var(--primary-color);
+  background-color: white;
+  border: 1px solid var(--primary-color);
+}
+.footer-img {
+  margin-bottom: 50px;
+}
+
+.footer-headers {
+  margin-bottom: 30px;
+}
+.footer-grid {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+#footer-image {
+  width: 15%;
+}
+
+.footer-head {
+  margin-bottom: 10px;
+}
+.link1 {
+  margin-bottom: 5px;
+}
+.footer-line {
+  text-align: center;
+}
+
+.footer-tabs {
+  margin: 40px 40px 40px 170px;
+}
+
+.link-img {
+  margin-right: 7px;
+  width: 11px;
+}
+
+#icons {
+  color: var(--secondary-color);
+  font-size: 20px;
+}

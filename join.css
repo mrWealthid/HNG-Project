@@ -38,10 +38,9 @@ button {
   border: none;
   font-family: var(--secondary-font);
   padding: 15px;
-  color: white;
-  border-radius: 10px;
+
   font-size: var(--content-fontsize);
-  font-weight: 700;
+
   transition: 0.5s;
 }
 
@@ -75,13 +74,13 @@ button {
 header {
   display: flex;
   justify-content: space-between;
-  padding: 24px 20px 20px 85px;
+  padding: 24px 100px 20px 170px;
   align-items: center;
 }
 
 main {
   display: flex;
-  margin: 30px 0px 70px 0px;
+  margin: 30px 70px 70px 80px;
   font-family: var(--primary-font);
   font-weight: 400;
   justify-content: space-around;
@@ -94,6 +93,7 @@ main {
   background-color: var(--secondary-color);
   padding: 12px 35px;
   width: 50%;
+  color: white;
   font-weight: 500;
   font-family: var(--secondary-font);
   letter-spacing: 0.02rem;
@@ -107,23 +107,74 @@ main {
 }
 
 #main-img {
-  width: 80%;
+  width: 100%;
 }
 
 .main-text {
-  width: 30%;
+  width: 38%;
   margin-top: 60px;
 }
 
 .main-text h1 {
-  margin: 60px 0px 30px 0px;
-  color: var(--primary-color);
+  margin: 10px 0px;
+  color: black;
   font-family: var(--secondary-font);
   font-weight: lighter;
 }
 .main-text h5 {
   font-size: var(--content-fontsize);
   font-weight: 700;
+  color: var(--secondary-color);
+}
+
+article {
+  margin: 0px auto;
+}
+
+.article-btns {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+article h1 {
+  margin-bottom: 25px;
+  color: rgba(34, 35, 38, 0.37);
+}
+
+#article-link {
+  text-align: end;
+  display: block;
+  margin: 30px 0px;
+  color: var(--secondary-color);
+  text-decoration: underline;
+  font-family: var(--secondary-font);
+  font-size: small;
+}
+
+/* .article-link {
+  display: flex;
+  justify-content: center;
+} */
+
+#design {
+  margin-right: 10px;
+  background: rgba(49, 215, 227, 0.84);
+  color: white;
+}
+#frontend {
+  margin-right: 10px;
+  background: rgba(88, 121, 238, 0.84);
+  color: white;
+}
+#backend {
+  margin-right: 10px;
+  background: rgba(226, 88, 238, 0.84);
+  color: white;
+}
+#machine {
+  margin-right: 10px;
+  background: rgba(238, 168, 88, 0.84);
+  color: white;
 }
 
 .contact-Details {
@@ -198,170 +249,4 @@ footer {
 #icons {
   color: var(--secondary-color);
   font-size: 20px;
-}
-
-@media (max-width: 1100px) {
-  main {
-    height: 65vh;
-    padding-left: 40px;
-    margin-top: 200px;
-  }
-
-  .img-class {
-    flex: 1;
-  }
-
-  .main-image {
-    flex: 1;
-  }
-
-  .main-text {
-    flex: 1;
-  }
-}
-
-@media (max-width: 815px) {
-  .header-links {
-    margin: 0px;
-    top: 75px;
-    right: 100%;
-    width: 75%;
-    text-align: center;
-    background-color: whitesmoke;
-    height: 100vh;
-    font-family: "Gruppo";
-    position: fixed;
-    transition: right 0.2s ease-in-out;
-
-    border-radius: 5px;
-    z-index: 1;
-  }
-
-  .active {
-    background-color: transparent;
-    color: black;
-    padding: 20px 0px;
-    margin: 0px;
-    font-size: 18px;
-    border: none;
-  }
-
-  a {
-    display: block;
-    padding: 20px 0px;
-    color: black;
-    font-size: 18px;
-    text-align: center;
-    margin: 0px;
-    background-color: transparent;
-    border: none;
-  }
-  .header-links a:first-of-type {
-    margin-top: 60px;
-  }
-
-  header {
-    padding: 20px 25px;
-  }
-
-  body {
-    background: #fef8ec;
-  }
-
-  main {
-    justify-content: center;
-    position: relative;
-    height: auto;
-    margin: 30px 0px 70px 0px;
-  }
-
-  .overlay-filter {
-    position: absolute;
-    backdrop-filter: blur(3px);
-    width: 100%;
-    height: 100%;
-    top: 76px;
-  }
-
-  .main-text {
-    width: 80%;
-    flex: none;
-    padding-left: 30px;
-  }
-  #main-img {
-    display: none;
-  }
-
-  .show {
-    right: 25%;
-  }
-  #footer-image {
-    width: 35%;
-  }
-
-  footer {
-    padding: 20px 60px;
-  }
-
-  .footer-grid {
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-row-gap: 20px;
-  }
-
-  .contact-Details3 {
-    grid-template-columns: auto;
-  }
-
-  .contact-Details {
-    width: 100%;
-  }
-
-  #contact {
-    margin-top: 20px;
-    width: 120%;
-  }
-
-  .footer-line {
-    display: none;
-  }
-
-  .footer-tabs {
-    margin: 40px 0px;
-  }
-  .main-content {
-    font-size: 15px;
-  }
-
-  .show {
-    display: block;
-  }
-  .wealth {
-    display: block;
-    margin-left: 18px;
-  }
-}
-
-@media (max-width: 450px) {
-  .footer-grid {
-    grid-template-columns: auto;
-    width: 100%;
-    justify-content: center;
-  }
-
-  .contact-Details3 {
-    width: 80%;
-  }
-  #contact {
-    width: 95%;
-  }
-
-  .footer-tabs {
-    border-top: 1px solid white;
-    padding: 20px 0px;
-  }
-
-  #main-btn {
-    width: 60%;
-  }
 }
