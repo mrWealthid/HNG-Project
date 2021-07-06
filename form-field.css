@@ -99,22 +99,31 @@ main {
 }
 
 form {
-  border: 1px solid gainsboro;
   width: 40%;
   padding: 10px 40px;
   background-color: white;
   margin-top: 73px;
   border-radius: 5px;
+  box-shadow: 1px 1px 5px gray;
 }
 
 form h3 {
   text-align: center;
   margin-top: 15px;
+  font-family: var(--secondary-font);
 }
-input,
-textarea {
+.input-group input,
+.input-group textarea {
   width: 100%;
   padding: 10px;
+  border: 2px solid gainsboro;
+  outline: none;
+  border-radius: 5px;
+}
+
+.input-group input:focus,
+.input-group textarea:focus {
+  border: 1px solid var(--primary-color);
 }
 
 textarea {
@@ -125,7 +134,7 @@ textarea {
 }
 .input-group small {
   display: block;
-
+  font-family: var(--secondary-font);
   margin-bottom: 10px;
 }
 
@@ -209,4 +218,149 @@ footer {
 #icons {
   color: var(--secondary-color);
   font-size: 20px;
+}
+
+@media (max-width: 1024px) {
+  form {
+    width: 70%;
+  }
+
+  main {
+    height: 70vh;
+  }
+}
+
+@media (max-width: 1023px) {
+  form {
+    width: 70%;
+  }
+
+  main {
+    height: auto;
+  }
+}
+
+@media (max-width: 815px) {
+  .header-links {
+    margin: 0px;
+    top: 60px;
+    right: 100%;
+    width: 75%;
+    text-align: center;
+    background-color: whitesmoke;
+    height: 100vh;
+    position: fixed;
+    transition: right 0.2s ease-in-out;
+    border-radius: 5px;
+    z-index: 1;
+  }
+
+  .active {
+    background-color: transparent;
+    color: black;
+    padding: 20px 0px;
+    margin: 0px;
+    font-size: 18px;
+    border: none;
+  }
+
+  main,
+  form {
+    height: auto;
+  }
+
+  form {
+    width: 85%;
+  }
+  a {
+    display: block;
+    padding: 20px 0px;
+    color: black;
+    font-size: 18px;
+    text-align: center;
+    margin: 0px;
+    background-color: transparent;
+    border: none;
+  }
+  .header-links a:first-of-type {
+    margin-top: 60px;
+  }
+
+  header {
+    padding: 20px 25px;
+  }
+
+  .overlay-filter {
+    position: absolute;
+    backdrop-filter: blur(3px);
+    width: 100%;
+    height: 100%;
+    top: 58px;
+  }
+
+  .show {
+    right: 25%;
+  }
+  #footer-image {
+    width: 35%;
+  }
+
+  footer {
+    padding: 20px 60px;
+  }
+
+  .footer-grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-row-gap: 20px;
+  }
+
+  .contact-Details3 {
+    grid-template-columns: auto;
+  }
+
+  .contact-Details {
+    width: 100%;
+  }
+
+  #contact {
+    margin-top: 20px;
+    width: 120%;
+  }
+
+  .footer-line {
+    display: none;
+  }
+
+  .footer-tabs {
+    margin: 40px 0px;
+  }
+
+  .show {
+    display: block;
+  }
+  .wealth {
+    display: block;
+    margin-left: 18px;
+  }
+}
+
+@media (max-width: 550px) {
+  .footer-grid {
+    grid-template-columns: auto;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .contact-Details3 {
+    width: 80%;
+  }
+  #contact {
+    width: 95%;
+  }
+
+  .footer-tabs {
+    border-top: 1px solid white;
+    padding: 20px 0px;
+  }
 }

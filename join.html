@@ -6,6 +6,10 @@
     <title>Document</title>
   </head>
 
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
   <link rel="stylesheet" href="join.css" />
   <body>
     <header>
@@ -14,10 +18,10 @@
       </div>
 
       <div class="header-links">
-        <a href="#">About</a>
-        <a href="#">Interns</a>
-        <a href="#">Support</a>
-        <a class="active" href="#">Join us</a>
+        <a href="./About.html">About</a>
+        <a href="./Interns.html">Interns</a>
+        <a href="./support.html">Support</a>
+        <a class="active" href="./join.html">Join us</a>
       </div>
 
       <div class="wealth">
@@ -38,7 +42,11 @@
           Click below to register</small
         >
 
-        <div><button id="main-btn">Join HNG</button></div>
+        <div>
+          <a href="./form-field.html"
+            ><button id="main-btn">Join HNG</button></a
+          >
+        </div>
       </div>
 
       <div class="main-image">
@@ -48,12 +56,12 @@
 
     <article>
       <h1>Training Tracks</h1>
-
-      <button id="design">UI/UX Design</button
-      ><button id="frontend">frontend Dev</button>
-      <button id="backend">Backend dev</button>
-      <button id="machine">Machine Learning</button>
-
+      <div class="article-btn">
+        <button id="design">UI/UX Design</button
+        ><button id="frontend">frontend Dev</button>
+        <button id="backend">Backend dev</button>
+        <button id="machine">Machine Learning</button>
+      </div>
       <div class="article-link">
         <a id="article-link" href="#">Get started now</a>
       </div>
@@ -92,7 +100,9 @@
             </p>
           </div>
           <div class="contact-btn">
-            <button id="contact">Contact Us</button>
+            <a href="./contact-page.html"
+              ><button id="contact">Contact Us</button></a
+            >
           </div>
         </div>
       </div>
@@ -104,5 +114,6 @@
       </div>
     </footer>
     <div class="overlay"></div>
+    <script src="project.js"></script>
   </body>
 </html>

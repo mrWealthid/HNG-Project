@@ -38,9 +38,8 @@ button {
   border: none;
   font-family: var(--secondary-font);
   padding: 15px;
-
+  cursor: pointer;
   font-size: var(--content-fontsize);
-
   transition: 0.5s;
 }
 
@@ -120,6 +119,7 @@ main {
   color: black;
   font-family: var(--secondary-font);
   font-weight: lighter;
+  font-size: x-large;
 }
 .main-text h5 {
   font-size: var(--content-fontsize);
@@ -130,12 +130,12 @@ main {
 article {
   margin: 0px auto;
 }
-
+/* 
 .article-btns {
   display: flex;
   justify-content: center;
   flex-direction: column;
-}
+} */
 article h1 {
   margin-bottom: 25px;
   color: rgba(34, 35, 38, 0.37);
@@ -160,21 +160,27 @@ article h1 {
   margin-right: 10px;
   background: rgba(49, 215, 227, 0.84);
   color: white;
+  padding: 25px;
 }
 #frontend {
   margin-right: 10px;
   background: rgba(88, 121, 238, 0.84);
   color: white;
+  padding: 25px;
+  /* width: 15%; */
 }
 #backend {
   margin-right: 10px;
   background: rgba(226, 88, 238, 0.84);
   color: white;
+
+  padding: 25px;
 }
 #machine {
   margin-right: 10px;
   background: rgba(238, 168, 88, 0.84);
   color: white;
+  padding: 25px;
 }
 
 .contact-Details {
@@ -249,4 +255,179 @@ footer {
 #icons {
   color: var(--secondary-color);
   font-size: 20px;
+}
+
+@media (max-width: 1100px) {
+  header {
+    padding: 20px;
+  }
+
+  #main-btn {
+    width: 65%;
+  }
+}
+
+@media (max-width: 815px) {
+  .header-links {
+    margin: 0px;
+    top: 75px;
+    right: 100%;
+    width: 75%;
+    text-align: center;
+    background-color: whitesmoke;
+    height: 100vh;
+
+    position: fixed;
+    transition: right 0.2s ease-in-out;
+
+    border-radius: 5px;
+    z-index: 1;
+  }
+
+  .active {
+    background-color: transparent;
+    color: black;
+    padding: 20px 0px;
+    margin: 0px;
+    font-size: 18px;
+    border: none;
+  }
+
+  a {
+    display: block;
+    padding: 20px 0px;
+    color: black;
+    font-size: 18px;
+    text-align: center;
+    margin: 0px;
+    background-color: transparent;
+    border: none;
+  }
+  .header-links a:first-of-type {
+    margin-top: 60px;
+  }
+
+  header {
+    padding: 20px 25px;
+  }
+
+  body {
+    background: #fef8ec;
+  }
+
+  main {
+    justify-content: center;
+    position: relative;
+    height: auto;
+    margin: 30px 0px;
+    flex-direction: column;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .overlay-filter {
+    position: absolute;
+    backdrop-filter: blur(3px);
+    width: 100%;
+    height: 100%;
+    top: 76px;
+  }
+
+  article {
+    text-align: center;
+  }
+  .article-btn {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main-text {
+    width: 100%;
+    flex: none;
+  }
+  .main-image {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  #main-img {
+    width: 65%;
+  }
+
+  #main-btn {
+    width: 30%;
+  }
+
+  .show {
+    right: 25%;
+  }
+  #footer-image {
+    width: 35%;
+  }
+
+  footer {
+    padding: 20px 60px;
+  }
+
+  .footer-grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-row-gap: 20px;
+  }
+
+  .contact-Details3 {
+    grid-template-columns: auto;
+  }
+
+  .contact-Details {
+    width: 100%;
+  }
+
+  #contact {
+    margin-top: 20px;
+    width: 120%;
+  }
+
+  .footer-line {
+    display: none;
+  }
+
+  .footer-tabs {
+    margin: 40px 0px;
+  }
+  .main-content {
+    font-size: 15px;
+  }
+
+  .show {
+    display: block;
+  }
+  .wealth {
+    display: block;
+    margin-left: 18px;
+  }
+}
+
+@media (max-width: 500px) {
+  .footer-grid {
+    grid-template-columns: auto;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .contact-Details3 {
+    width: 80%;
+  }
+  #contact {
+    width: 95%;
+  }
+
+  .footer-tabs {
+    border-top: 1px solid white;
+    padding: 20px 0px;
+  }
+
+  #main-btn {
+    width: 50%;
+  }
 }

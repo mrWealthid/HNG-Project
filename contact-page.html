@@ -4,7 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <link rel="stylesheet" href="contact-page.css" />
   </head>
   <body>
@@ -15,15 +18,26 @@
 
       <div class="form-wrapper">
         <div class="form-content">
-          <div class="header-links">
-            <a href="#">About</a>
-            <a href="#">Interns</a>
-            <a href="#">Support</a>
-            <a class="active" href="#">Join us</a>
-            <img src="Group.png" class="image-design" />
-            <img src="Group.png" class="image-design2" />
-          </div>
+          <header>
+            <div class="Img-class">
+              <img id="header-img" src="Group 9 (1).png" alt="brand-logo" />
+            </div>
 
+            <div class="header-links">
+              <a href="./About.html">About</a>
+              <a href="./Interns.html">Interns</a>
+              <a href="./support.html">Support</a>
+              <a class="active" href="./join.html">Join us</a>
+              <img src="Group.png" class="image-design" />
+              <img src="Group.png" class="image-design2" />
+            </div>
+
+            <div class="wealth">
+              <span id="icons">
+                <i class="fa fa-1.5x fa-bars"></i>
+              </span>
+            </div>
+          </header>
           <h2>We’d love to hear from you</h2>
 
           <small id="content"
@@ -37,13 +51,13 @@
             <div class="input-group">
               <small>Name</small>
 
-              <input type="text" />
+              <input type="text" name="name" autofocus />
             </div>
 
             <div class="input-group">
               <small>Email</small>
 
-              <input type="email" />
+              <input type="email" name="email" />
             </div>
             <div class="input-group">
               <small id="textarea">Message</small>
@@ -104,5 +118,7 @@
         <p>&copy; 2021 HNG internship . All Rights Reserved. HNG Group</p>
       </div>
     </footer>
+    <div class="overlay"></div>
+    <script src="project.js"></script>
   </body>
 </html>

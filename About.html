@@ -6,6 +6,11 @@
     <title>Document</title>
 
     <link rel="stylesheet" href="About.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
   <body>
     <header>
@@ -15,9 +20,9 @@
 
       <div class="header-links">
         <a href="#">About</a>
-        <a href="#">Interns</a>
-        <a href="#">Support</a>
-        <a class="active" href="#">Join us</a>
+        <a href="./Interns.html">Interns</a>
+        <a href="./support.html">Support</a>
+        <a class="active" href="./join.html">Join us</a>
       </div>
 
       <div class="wealth">
@@ -50,7 +55,7 @@
       </div>
 
       <div class="article-img">
-        <img src="Telework-rafiki 1.png" alt="article-img" />
+        <img id="article-image" src="Telework-rafiki 1.png" alt="article-img" />
       </div>
     </article>
 
@@ -135,7 +140,9 @@
             </p>
           </div>
           <div class="contact-btn">
-            <button id="contact">Contact Us</button>
+            <a href="./contact-page.html"
+              ><button id="contact">Contact Us</button></a
+            >
           </div>
         </div>
       </div>
@@ -147,5 +154,6 @@
       </div>
     </footer>
     <div class="overlay"></div>
+    <script src="project.js"></script>
   </body>
 </html>

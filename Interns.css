@@ -33,7 +33,7 @@ a {
 a:hover {
   color: var(--secondary-color);
 }
-button {
+/* button {
   outline: none;
   border: none;
   font-family: var(--secondary-font);
@@ -43,7 +43,7 @@ button {
   font-size: var(--content-fontsize);
   font-weight: 700;
   transition: 0.5s;
-}
+} */
 
 .active {
   border-radius: 30px;

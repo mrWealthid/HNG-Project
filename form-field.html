@@ -7,6 +7,11 @@
   </head>
 
   <link rel="stylesheet" href="form-field.css" />
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
   <body>
     <header>
       <div class="Img-class">
@@ -14,10 +19,10 @@
       </div>
 
       <div class="header-links">
-        <a href="#">About</a>
-        <a href="#">Interns</a>
-        <a href="#">Support</a>
-        <a class="active" href="#">Join us</a>
+        <a href="./About.html">About</a>
+        <a href="./index.html">Interns</a>
+        <a href="./support.html">Support</a>
+        <a class="active" href="./join.html">Join us</a>
       </div>
 
       <div class="wealth">
@@ -34,13 +39,13 @@
         <div class="input-group">
           <small>Name</small>
 
-          <input type="text" />
+          <input type="text" name="name" autofocus />
         </div>
 
         <div class="input-group">
           <small>Email</small>
 
-          <input type="email" />
+          <input type="email" name="email" />
         </div>
 
         <div class="input-group">
@@ -87,7 +92,9 @@
             </p>
           </div>
           <div class="contact-btn">
-            <button id="contact">Contact Us</button>
+            <a href="./contact-page.html"
+              ><button id="contact">Contact Us</button></a
+            >
           </div>
         </div>
       </div>
@@ -99,5 +106,6 @@
       </div>
     </footer>
     <div class="overlay"></div>
+    <script src="project.js"></script>
   </body>
 </html>

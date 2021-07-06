@@ -107,7 +107,7 @@ main {
 }
 
 #main-img {
-  width: 80%;
+  width: 65%;
 }
 
 .main-text {
@@ -200,27 +200,47 @@ footer {
   font-size: 20px;
 }
 
-@media (max-width: 1100px) {
-  main {
+@media (max-width: 1024px) {
+  /* main {
     height: 65vh;
     padding-left: 40px;
     margin-top: 200px;
-  }
+  } */
 
-  .img-class {
-    flex: 1;
-  }
-
-  .main-image {
-    flex: 1;
+  main {
+    flex-direction: column-reverse;
+    justify-content: center;
+    position: relative;
+    height: auto;
+    margin-top: 100px;
+    text-align: center;
+    padding: 15px;
+    height: 80vh;
   }
 
   .main-text {
-    flex: 1;
+    width: 100%;
+    flex: none;
+    margin: 0px;
+  }
+
+  #main-btn {
+    width: 25%;
+  }
+
+  .footer-line {
+    display: none;
+  }
+
+  #main-img {
+    width: 40%;
+  }
+
+  footer {
+    margin-top: 30px;
   }
 }
-
-@media (max-width: 815px) {
+@media (max-width: 760px) {
   .header-links {
     margin: 0px;
     top: 75px;
@@ -237,6 +257,9 @@ footer {
     z-index: 1;
   }
 
+  #main-btn {
+    width: 40%;
+  }
   .active {
     background-color: transparent;
     color: black;
@@ -264,16 +287,9 @@ footer {
     padding: 20px 25px;
   }
 
-  body {
-    background: #fef8ec;
-  }
-
-  main {
-    justify-content: center;
-    position: relative;
-    height: auto;
-    margin: 30px 0px 70px 0px;
-  }
+  /* body {
+    background: #ebebeb;
+  } */
 
   .overlay-filter {
     position: absolute;
@@ -283,15 +299,14 @@ footer {
     top: 76px;
   }
 
-  .main-text {
-    width: 80%;
-    flex: none;
-    padding-left: 30px;
-  }
   #main-img {
-    display: none;
+    width: 50%;
   }
 
+  main {
+    margin: 0px;
+    height: auto;
+  }
   .show {
     right: 25%;
   }
@@ -300,7 +315,8 @@ footer {
   }
 
   footer {
-    padding: 20px 60px;
+    padding: 20px 40px;
+    margin-top: 10px;
   }
 
   .footer-grid {
@@ -320,10 +336,6 @@ footer {
   #contact {
     margin-top: 20px;
     width: 120%;
-  }
-
-  .footer-line {
-    display: none;
   }
 
   .footer-tabs {
