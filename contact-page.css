@@ -273,6 +273,10 @@ footer {
   .form-content {
     height: 80vh;
   }
+
+  footer {
+    display: none;
+  }
 }
 
 @media (max-width: 980px) {
@@ -367,7 +371,9 @@ footer {
     height: 100%;
     top: 76px;
   }
-
+  footer {
+    display: block;
+  }
   .show {
     right: 25%;
   }

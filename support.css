@@ -296,6 +296,10 @@ footer {
   .main-content {
     grid-column: 1/4;
   }
+
+  .footer-line {
+    display: none;
+  }
 }
 
 @media (max-width: 815px) {
@@ -372,6 +376,7 @@ footer {
 
   main {
     width: 80%;
+    height: auto;
   }
   .main-content {
     margin: 0px;

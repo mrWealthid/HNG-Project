@@ -212,16 +212,18 @@ footer {
     justify-content: center;
     position: relative;
     height: auto;
-    margin-top: 100px;
+    margin-top: 50px;
     text-align: center;
     padding: 15px;
     height: 80vh;
   }
 
   .main-text {
-    width: 100%;
+    width: 70%;
     flex: none;
     margin: 0px;
+    text-align: center;
+    margin: 0px auto;
   }
 
   #main-btn {
