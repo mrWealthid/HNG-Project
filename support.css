@@ -150,7 +150,7 @@ article h3 {
 }
 .article-wrapper {
   width: 60%;
-  margin: 30px auto;
+  margin: 90px auto;
 }
 
 article img {
@@ -200,8 +200,6 @@ footer {
   margin-top: 30px;
   font-family: var(--primary-font);
   font-size: 14px;
-  position: relative;
-  bottom: 0px;
 }
 
 #contact {
@@ -270,6 +268,7 @@ footer {
 
   article {
     flex-direction: column;
+    height: 30vh;
   }
   .article-img,
   .article-content {
@@ -326,6 +325,11 @@ footer {
     margin: 0px;
     font-size: 18px;
     border: none;
+  }
+
+  .wrapper,
+  article {
+    height: auto;
   }
 
   a {

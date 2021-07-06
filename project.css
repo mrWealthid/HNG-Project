@@ -143,8 +143,6 @@ footer {
   margin-top: 30px;
   font-family: var(--primary-font);
   font-size: 14px;
-  position: relative;
-  bottom: 0px;
 }
 
 #contact {
@@ -217,7 +215,7 @@ footer {
     margin-top: 50px;
     text-align: center;
     padding: 15px;
-    /* height: 80vh; */
+    height: 80vh;
   }
 
   .main-text {
@@ -228,11 +226,6 @@ footer {
     margin: 0px auto;
   }
 
-  footer {
-    margin-top: 30px;
-    position: relative;
-    bottom: -64px;
-  }
   #main-btn {
     width: 25%;
   }
@@ -243,6 +236,10 @@ footer {
 
   #main-img {
     width: 40%;
+  }
+
+  footer {
+    margin-top: 30px;
   }
 }
 @media (max-width: 760px) {
@@ -322,7 +319,6 @@ footer {
   footer {
     padding: 20px 40px;
     margin-top: 10px;
-    bottom: 0px;
   }
 
   .footer-grid {
