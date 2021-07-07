@@ -93,7 +93,7 @@ header {
 main {
   display: flex;
   justify-content: center;
-  background-image: url("Frame 14.png");
+  background-image: url("./assets/Frame 14.png");
   background-size: contain;
   background-repeat: no-repeat;
 }

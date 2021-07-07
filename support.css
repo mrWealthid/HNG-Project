@@ -71,10 +71,6 @@ button {
   width: 60%;
 }
 
-/* .img-class {
-  flex: 1;
-} */
-
 header {
   display: flex;
   justify-content: space-evenly;
@@ -112,12 +108,6 @@ main {
 #main-colored-text {
   color: var(--primary-color);
 }
-
-/* .card1,
-.card2,
-.card3 {
- 
-} */
 
 .card1 {
   margin-top: 150px;

@@ -262,6 +262,9 @@ footer {
     padding: 20px;
   }
 
+  footer {
+    margin-top: 40vh;
+  }
   #main-btn {
     width: 65%;
   }
@@ -367,6 +370,7 @@ footer {
 
   footer {
     padding: 20px 60px;
+    margin-top: auto;
   }
 
   .footer-grid {

@@ -201,12 +201,6 @@ footer {
 }
 
 @media (max-width: 1024px) {
-  /* main {
-    height: 65vh;
-    padding-left: 40px;
-    margin-top: 200px;
-  } */
-
   main {
     flex-direction: column-reverse;
     justify-content: center;

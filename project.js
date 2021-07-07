@@ -18,3 +18,8 @@ harmburger.addEventListener("click", Toggler);
 headerLinks.addEventListener("click", Toggler);
 
 overlay.addEventListener("click", Toggler);
+
+// Escape Key toggles the collapsable nav
+document.addEventListener("keydown", (e) => {
+  e.key === "Escape" && Toggler();
+});
