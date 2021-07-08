@@ -272,6 +272,11 @@ footer {
   .footer-line {
     display: none;
   }
+
+  .section--hidden {
+    opacity: 1;
+    transform: translateY(8rem);
+  }
 }
 
 @media (max-width: 815px) {
@@ -335,7 +340,10 @@ footer {
     text-align: center;
     padding: 10px;
   }
-
+  .section--hidden {
+    opacity: 0;
+    transform: translateY(8rem);
+  }
   .overlay-filter {
     position: absolute;
     backdrop-filter: blur(3px);

@@ -243,7 +243,7 @@ footer {
 
 .section--hidden {
   opacity: 0;
-  transform: translateY(8rem);
+  transform: translateY(0rem);
 }
 
 @media (max-width: 1024px) {
@@ -255,6 +255,9 @@ footer {
     width: 65%;
   }
 
+  .section--hidden {
+    opacity: 1;
+  }
   article {
     flex-direction: column;
   }
@@ -327,6 +330,10 @@ footer {
     margin-top: 60px;
   }
 
+  .section--hidden {
+    opacity: 0;
+    transform: translateY(8rem);
+  }
   header {
     padding: 20px 25px;
     z-index: 2;
