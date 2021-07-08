@@ -33,7 +33,7 @@ a {
   transition: 0.5;
 }
 
-a:hover {
+.header-links a:hover {
   color: var(--secondary-color);
 }
 button {
@@ -46,9 +46,10 @@ button {
   font-size: var(--content-fontsize);
   font-weight: 700;
   transition: 0.5s;
+  cursor: pointer;
 }
 
-.active {
+.header-links .active {
   border-radius: 30px;
   background-color: var(--secondary-color);
   font-family: var(--primary-font);
@@ -76,6 +77,9 @@ header {
   justify-content: space-evenly;
   padding: 24px 20px 20px 85px;
   align-items: center;
+  position: sticky;
+  top: 0px;
+  background: white;
 }
 
 main {
@@ -247,6 +251,17 @@ footer {
   font-size: 20px;
 }
 
+/* Revealing section as you scroll */
+
+.section {
+  transition: transform 1s, opacity 1s;
+}
+
+.section--hidden {
+  opacity: 0;
+  transform: translateY(8rem);
+}
+
 @media (max-width: 1024px) {
   header {
     padding: 20px;
@@ -296,19 +311,20 @@ footer {
 @media (max-width: 815px) {
   .header-links {
     margin: 0px;
-    top: 60px;
+    top: 75px;
     right: 100%;
     width: 75%;
     text-align: center;
     background-color: whitesmoke;
     height: 100vh;
+    font-family: "Gruppo";
     position: fixed;
     transition: right 0.2s ease-in-out;
     border-radius: 5px;
     z-index: 1;
   }
 
-  .active {
+  .header-links .active {
     background-color: transparent;
     color: black;
     padding: 20px 0px;
@@ -322,7 +338,7 @@ footer {
     height: auto;
   }
 
-  a {
+  .header-links a {
     display: block;
     padding: 20px 0px;
     color: black;
@@ -332,6 +348,10 @@ footer {
     background-color: transparent;
     border: none;
   }
+
+  .header-links a:hover {
+    color: var(--secondary-color);
+  }
   .header-links a:first-of-type {
     margin-top: 60px;
   }
@@ -339,6 +359,7 @@ footer {
   header {
     padding: 20px 25px;
     justify-content: space-between;
+    z-index: 2;
   }
 
   body {

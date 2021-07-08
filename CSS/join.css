@@ -22,7 +22,7 @@ body {
   flex-direction: column;
 }
 
-a {
+.header-links a {
   color: black;
   margin-right: 15px;
   font-family: var(--primary-font);
@@ -30,7 +30,7 @@ a {
   transition: 0.5;
 }
 
-a:hover {
+.header-links a:hover {
   color: var(--secondary-color);
 }
 button {
@@ -43,7 +43,7 @@ button {
   transition: 0.5s;
 }
 
-.active {
+.header-links .active {
   border-radius: 30px;
   background-color: var(--secondary-color);
   font-family: var(--primary-font);
@@ -66,15 +66,14 @@ button {
   width: 60%;
 }
 
-/* .img-class {
-  flex: 1;
-} */
-
 header {
   display: flex;
   justify-content: space-between;
   padding: 24px 100px 20px 170px;
   align-items: center;
+  position: sticky;
+  top: 0px;
+  background: white;
 }
 
 main {
@@ -130,12 +129,7 @@ main {
 article {
   margin: 0px auto;
 }
-/* 
-.article-btns {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-} */
+
 article h1 {
   margin-bottom: 25px;
   color: rgba(34, 35, 38, 0.37);
@@ -150,11 +144,6 @@ article h1 {
   font-family: var(--secondary-font);
   font-size: small;
 }
-
-/* .article-link {
-  display: flex;
-  justify-content: center;
-} */
 
 #design {
   margin-right: 10px;
@@ -209,6 +198,7 @@ footer {
   padding: 13px;
   font-size: 12px;
   font-weight: 500;
+  color: white;
 }
 
 #contact:hover {
@@ -257,6 +247,17 @@ footer {
   font-size: 20px;
 }
 
+/* Revealing section as you scroll */
+
+.section {
+  transition: transform 1s, opacity 1s;
+}
+
+.section--hidden {
+  opacity: 0;
+  transform: translateY(8rem);
+}
+
 @media (max-width: 1100px) {
   header {
     padding: 20px;
@@ -267,6 +268,9 @@ footer {
   }
   #main-btn {
     width: 65%;
+  }
+  .footer-line {
+    display: none;
   }
 }
 
@@ -287,7 +291,7 @@ footer {
     z-index: 1;
   }
 
-  .active {
+  .header-links .active {
     background-color: transparent;
     color: black;
     padding: 20px 0px;
@@ -296,7 +300,7 @@ footer {
     border: none;
   }
 
-  a {
+  .header-links a {
     display: block;
     padding: 20px 0px;
     color: black;
@@ -309,9 +313,13 @@ footer {
   .header-links a:first-of-type {
     margin-top: 60px;
   }
+  .header-links a:hover {
+    color: var(--secondary-color);
+  }
 
   header {
     padding: 20px 25px;
+    z-index: 2;
   }
 
   body {

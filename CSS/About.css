@@ -45,9 +45,10 @@ button {
   font-size: var(--content-fontsize);
   font-weight: 700;
   transition: 0.5s;
+  cursor: pointer;
 }
 
-.active {
+.header-links .active {
   border-radius: 30px;
   background-color: var(--secondary-color);
   font-family: var(--primary-font);
@@ -81,6 +82,9 @@ header {
   justify-content: space-around;
   padding: 24px 20px 20px 85px;
   align-items: center;
+  position: sticky;
+  top: 0px;
+  background: white;
 }
 
 main {
@@ -231,6 +235,17 @@ footer {
   font-size: 20px;
 }
 
+/* Revealing section as you scroll */
+
+.section {
+  transition: transform 1s, opacity 1s;
+}
+
+.section--hidden {
+  opacity: 0;
+  transform: translateY(8rem);
+}
+
 @media (max-width: 1024px) {
   header {
     padding: 20px;
@@ -286,7 +301,7 @@ footer {
     z-index: 1;
   }
 
-  .active {
+  .header-links .active {
     background-color: transparent;
     color: black;
     padding: 20px 0px;
@@ -295,7 +310,10 @@ footer {
     border: none;
   }
 
-  a {
+  .header-links a:hover {
+    color: var(--secondary-color);
+  }
+  .header-links a {
     display: block;
     padding: 20px 0px;
     color: black;
@@ -311,6 +329,7 @@ footer {
 
   header {
     padding: 20px 25px;
+    z-index: 2;
   }
 
   body {
