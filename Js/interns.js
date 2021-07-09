@@ -83,6 +83,7 @@ const slider = function () {
   };
 
   // Next slide
+
   const nextSlide = function () {
     if (curSlide === maxSlide - 1) {
       curSlide = 0;
@@ -111,6 +112,8 @@ const slider = function () {
     activateDot(0);
   };
   init();
+
+  setInterval(nextSlide, 3000);
 
   // Event handlers
   btnRight.addEventListener("click", nextSlide);
